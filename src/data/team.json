@@ -1,0 +1,74 @@
+[
+    {
+        "img": "/images/team/pic1.png",
+        "name": "Sophia Carter",
+        "position": "Creative Director",
+        "description": "Sophia Carter is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts. She seamlessly blends aesthetics with intuitive functionality, all while maintaining a calm, can-do attitude that keeps the team focused and collaborative.When not collaborating with fellow creatives, project managers, and stakeholders, she brings client strategies to life through compelling concepts and cleverly crafted messaging.",
+        "excerpt": "Sophia Carter is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts.",
+        "slug": "sophia-carter",
+        "socialLinks": [
+            {
+                "href": "https://www.linkedin.com/company/technicalhub/",
+                "icon": "fa-linkedin-in"
+            },
+            {
+                "href": "https://www.instagram.com/technicalhubio/",
+                "icon": "fa-instagram"
+            }
+        ]
+    },
+    {
+        "img": "/images/team/pic2.png",
+        "name": "Ethan Brooks",
+        "position": "Brand Strategist",
+        "description": "Ethan Brooks is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts. She seamlessly blends aesthetics with intuitive functionality, all while maintaining a calm, can-do attitude that keeps the team focused and collaborative.When not collaborating with fellow creatives, project managers, and stakeholders, she brings client strategies to life through compelling concepts and cleverly crafted messaging.",
+        "excerpt": "Ethan Brooks is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts.",
+        "slug": "ethan-brooks",
+        "socialLinks": [
+            {
+                "href": "https://www.linkedin.com/company/technicalhub/",
+                "icon": "fa-linkedin-in"
+            },
+            {
+                "href": "https://www.instagram.com/technicalhubio/",
+                "icon": "fa-instagram"
+            }
+        ]
+    },
+    {
+        "img": "/images/team/pic3.png",
+        "name": "Liam Patel",
+        "position": "Marketing Specialist",
+        "description": "Liam Patel is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts. She seamlessly blends aesthetics with intuitive functionality, all while maintaining a calm, can-do attitude that keeps the team focused and collaborative.When not collaborating with fellow creatives, project managers, and stakeholders, she brings client strategies to life through compelling concepts and cleverly crafted messaging.",
+        "excerpt": "Liam Patel is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts.",
+        "slug": "liam-patel",
+        "socialLinks": [
+            {
+                "href": "https://www.linkedin.com/company/technicalhub/",
+                "icon": "fa-linkedin-in"
+            },
+            {
+                "href": "https://www.instagram.com/technicalhubio/",
+                "icon": "fa-instagram"
+            }
+        ]
+    },
+    {
+        "img": "/images/team/pic4.png",
+        "name": "Olivia Bennett",
+        "position": "Content Writer",
+        "description": "Olivia Bennett is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts. She seamlessly blends aesthetics with intuitive functionality, all while maintaining a calm, can-do attitude that keeps the team focused and collaborative.When not collaborating with fellow creatives, project managers, and stakeholders, she brings client strategies to life through compelling concepts and cleverly crafted messaging.",
+        "excerpt": "Olivia Bennett is recognized for transforming creative briefs into visually stunning digital designs and long-format layouts.",
+        "slug": "olivia-bennett",
+        "socialLinks": [
+            {
+                "href": "https://www.linkedin.com/company/technicalhub/",
+                "icon": "fa-linkedin-in"
+            },
+            {
+                "href": "https://www.instagram.com/technicalhubio/",
+                "icon": "fa-instagram"
+            }
+        ]
+    }
+]

@@ -1,0 +1,156 @@
+@layer components {
+    .btn {
+        display: inline-flex;
+        font-size: var(--text-xl);
+        font-weight: var(--font-weight-regular);
+        border-radius: calc(infinity * 40px);
+        line-height: var(--leading-normal);
+        padding: --spacing(5);
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        transition-duration: 0s !important;
+    }
+    .btn-primary {
+        color: var(--color-secondary);
+        color: var(--color-secondary);
+        background-color: var(--color-primary);
+        --btn-hover: var(--color-secondary);
+    }
+    .btn-black {
+        color: var(--color-white);
+        background-color: var(--color-secondary);
+        --btn-hover: var(--color-white);
+    }
+    .btn-outline {
+        --btn-hover: var(--color-secondary);
+        color: var(--color-secondary);
+        background-color: transparent;
+        border: 2px solid var(--color-secondary);
+    }
+    .btn-outline.light {
+        @apply border-2 dark:border-white border-black dark:text-white text-black;
+        --btn-hover: var(--color-primary);
+    }
+    .btn-outline.light:hover {
+        @apply border-2 border-primary;
+    }
+    
+
+    .btn.btn-black.button--stroke:hover,
+    .btn.btn-outline.light.button--stroke:hover{
+        @apply text-secondary;
+    }
+    
+    .btn.btn-primary.button--stroke:hover ,
+    .btn.btn-outline.button--stroke:hover {
+        @apply text-white;
+    }
+	
+	.btn.btn-primary.button--stroke{
+		overflow:visible;
+	}
+	.btn.btn-primary.button--stroke .button-flair__wrapper{
+		overflow:hidden;
+		position:absolute;
+		inset:-1px;
+		border-radius:inherit;
+	}
+
+    .button--stroke:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+    
+    .button__label {
+        position: relative;
+        text-align: center;
+        transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    
+    .button--stroke:hover .button__label {
+        transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .button-flair {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        transform: scale(0);
+    }
+    .button--stroke .button-flair {
+        transform: scale(0);
+        transform-origin: 0 0;
+    }
+    .button-flair:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        aspect-ratio: 1/1;
+        background-color: var(--btn-hover);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+	
+}
+
+.gradient-hover:hover {
+    background: linear-gradient(180deg, #6EFF6E 1.92%, #BAFFAE 53.04%, #8CFA79 100%);
+    transition: background 0.4s ease-in-out;
+    color: #000;
+  }
+
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: var(--text-lg);
+    }
+}
+@media screen and (max-width: 567px) {
+    .btn {
+        font-size: var(--text-base);
+    }
+}
+.bordergradient:hover {
+    background: padding-box, conic-gradient(from var(--angle), #ABFF84 1.04%, rgba(40, 40, 46, 0.25) 26.51%, rgba(59, 74, 37, 0) 43.7%, #ABFF84 73.76%, rgba(40, 40, 46, 0) 89.65%) border-box !important;
+    animation: anglerotate 5s linear infinite !important;
+  }
+  
+  .bordergradient {
+    @apply bg-card relative z-1 overflow-hidden;
+  }
+  .bordergradient:after {
+    @apply content-[''] absolute size-[calc(100%_-_1px)] bg-card rounded-lg -z-1 top-0 left-0;
+  }
+  @keyframes anglerotate {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .btn-overlay:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(110 255 110 / 50%);
+  }
+  .btn-overlay svg {    
+    transition-duration: 0.5s;
+  }
+  .btn-overlay:hover svg {    
+    transform: rotate(45deg);
+  }

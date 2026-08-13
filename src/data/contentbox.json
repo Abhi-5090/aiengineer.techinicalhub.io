@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Onboarding Process",
+        "excerpt": "A smooth, guided start into the AI Ready Engineer program.",
+        "icon": "MicIcon",
+        "data": "1"
+    },
+    {
+        "title": "Application Access",
+        "excerpt": "Get access to the learning platform, courses, and assessments.",
+        "icon": "PcIcon",
+        "data": "2"
+    },
+    {
+        "title": "AI Projects & Internship Letter",
+        "excerpt": "Build real AI projects and earn your internship completion letter.",
+        "icon": "RocketIcon",
+        "data": "3"
+    },
+    {
+        "title": "AI Certification",
+        "excerpt": "Get certified by our authorized AI partners.",
+        "icon": "GrowthIcon",
+        "data": "4"
+    }
+]

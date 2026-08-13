@@ -1,0 +1,30 @@
+[
+    {
+        "price": "$20",
+        "title": "Intro",
+        "desc": "For most businesses that want to optimize web queries",
+        "badge": "MOST POPULAR",
+        "services": ["Project Management", "Task Tracking", "Basic Reporting", "Up to 10 Team Members ", "Calendar Integration"]
+    },
+    {
+        "price": "$50",
+        "title": "Basic",
+        "desc": "For companies looking to enhance online visibility",
+        "badge": "RECOMMENDED",
+        "services": ["Project Management", "Task Tracking", "Basic Reporting", "Up to 10 Team Members ", "Calendar Integration"]
+    },
+    {
+        "price": "$100",
+        "title": "Pro",
+        "desc": "For businesses wanting to attract more organic traffic",
+        "badge": "TOP CHOICE",
+        "services": ["Project Management", "Task Tracking", "Basic Reporting", "Up to 10 Team Members ", "Calendar Integration"]
+    },
+    {
+        "price": "$200",
+        "title": "Enterprise",
+        "desc": "For organizations looking to boost user engagement",
+        "badge": "BEST VALUE",
+        "services": ["Project Management", "Task Tracking", "Basic Reporting", "Up to 10 Team Members ", "Calendar Integration"]
+    }
+]

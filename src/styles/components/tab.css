@@ -1,0 +1,13 @@
+.tab-title.active a {
+    @apply dark:text-white text-dark;
+}
+.tab-title.active a::after {
+    width: 100%;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

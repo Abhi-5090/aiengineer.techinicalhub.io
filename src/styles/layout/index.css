@@ -1,0 +1,83 @@
+.text-char {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 180px / 2);
+    height: calc(180px / 2);
+    width: 180px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    transform-origin: bottom center;
+    transform: rotate(var(--char-rotate));
+    color: var(--color-secondary);
+    padding-top: 8px;
+  }
+  
+.circle-progress circle.progress-ring {
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+}
+
+.progress-text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+.word {
+  display: inline-block;
+  margin: 0 6px;
+}
+.letter {
+  opacity: 0.1;
+  display: inline-block;
+}
+
+.space {
+  display: inline-block;
+  width: 1.5rem;
+}
+.dark .pxl-heading-scroll-effect {
+  --heading-color-1: rgba(255, 255, 255, 0.2);
+}
+.light .pxl-heading-scroll-effect {
+  --heading-color-1: rgba(0, 0, 0, 0.2);
+}
+.pxl-heading-scroll-effect .heading-text div {
+  background-clip: text;
+  color: transparent;
+  background: linear-gradient(to right, var(--pxl-heading) 50%, var(--heading-color-1) 50%) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.75s;
+}
+.dark .pxl-heading-scroll-effect .heading-text div {
+  --pxl-heading: white;
+}
+.light .pxl-heading-scroll-effect .heading-text div {
+  --pxl-heading: black;
+}
+#rocket, #blast {
+  transform: translate(-50%, -50%);
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+  .my-sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  #videoContainer iframe {
+  @apply max-md:h-400;
+}

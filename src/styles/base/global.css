@@ -1,0 +1,129 @@
+@layer base {
+    * {
+        scrollbar-width: thin;
+    }
+    body {
+        @apply font-base dark:bg-bodybg bg-white selection:bg-primary selection:text-white;
+    }
+    .page-wraper {
+        @apply dark:bg-bodybg bg-white;
+    }
+    .noice-overlay {
+        @apply relative z-1 after:content-[''] after:absolute after:top-0 after:left-0 after:size-full after:bg-repeat after:bg-[100%] after:bg-noise after:-z-2 after:pointer-events-none;
+    }
+    section {
+        @apply relative;
+    }
+    h1, .h1, h2, .h2, h3, .h {
+        @apply font-bold dark:text-title text-[#171717];
+    }
+    h4, .h4, h5, .h5, h6, .h6 {
+        @apply font-medium dark:text-title text-[#171717];
+    }
+    p {
+        @apply dark:text-bodytext text-textlight;
+    }
+    
+}
+@layer utilities {
+    .content-counter::after {
+      content: "0" counter(counter-item);
+    }
+}
+a{
+    @apply duration-500;
+}
+
+
+textarea ,
+input {
+  @apply outline-0 outline-none;
+}
+
+.theme-btn .active {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50px;
+  z-index: 1;
+  transition: 0.5s;
+}
+html.dark .theme-btn {
+  background: #fff;
+}
+html.light .theme-btn {
+  background: #000;
+}
+html.light .theme-btn .active {
+  left: 50%;
+  background: #ffffff;
+}
+
+html.dark .theme-btn .active {
+  left: 11%;
+  background: #000000;
+}
+
+/* POINTER */
+#pointer-ring {
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 1px solid var(--primary) !important;
+  position: fixed;
+  border-radius: 100px;
+  z-index: 999999;
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s;
+}
+#pointer-ring.active {
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  background-color: rgba(255,255,255,0.2);
+  border: 0 !important;
+}
+.link-hover {
+  @apply relative hover:after:w-full hover:after:left-0 hover:after:right-auto;
+}
+.link-hover::after {
+  @apply content-[''] absolute h-1 bg-primary bottom-0 right-0 w-0 duration-500 ;
+}
+
+.svg-currentcolor path {
+  stroke: currentColor;
+}
+.stackCard {
+  transform-origin: 50% -115%;
+}
+#videoContainer iframe,
+#videoContainer video {
+    width: 100%;
+    height: 676px;
+    border: none;
+    border-radius: 8px;
+}
+
+.anime-row .num-circle {
+  transition: .3s all;
+}
+.anime-row.active .num-circle {
+  background-color: var(--primary);
+  color: #000;
+}
+
+/* Scroll Top */
+#scrollProgress.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dzFormMsg .alert-success {
+  @apply text-green-900 bg-green-200 p-20 mb-10;
+}

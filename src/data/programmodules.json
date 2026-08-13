@@ -1,0 +1,18 @@
+[
+    { "number": "01", "title": "LLM Foundation", "description": "Understand how large language models work under the hood — architecture, training, and core capabilities." },
+    { "number": "02", "title": "Generative AI", "description": "Explore how generative models create text, images, and other content from a single prompt." },
+    { "number": "03", "title": "AI Tools", "description": "Hands-on with the everyday AI tools engineers use to think, build, and ship faster." },
+    { "number": "04", "title": "Prompt Engineering", "description": "Learn to write clear, structured prompts that get consistent, high-quality output from any model." },
+    { "number": "05", "title": "GitHub & Version Control", "description": "Master Git and GitHub workflows for tracking changes and collaborating on real codebases." },
+    { "number": "06", "title": "Vibe Coding", "description": "Build fast with AI pair-programming — describe intent, iterate, and ship working code." },
+    { "number": "07", "title": "Database", "description": "Core database design and querying skills every AI engineer needs to store and retrieve data." },
+    { "number": "08", "title": "AI API Integration", "description": "Connect AI models into real applications through clean, production-ready API integrations." },
+    { "number": "09", "title": "RAG Systems", "description": "Build retrieval-augmented generation pipelines that ground AI answers in your own data." },
+    { "number": "10", "title": "AI Agents", "description": "Design autonomous agents that plan, use tools, and complete multi-step tasks on their own." },
+    { "number": "11", "title": "3 C's — Claude · Codex · Copilot", "description": "A hands-on tour of Claude, Codex, and Copilot — and when to reach for each one." },
+    { "number": "12", "title": "AI Security", "description": "Understand the security risks unique to AI systems and how to build against them." },
+    { "number": "13", "title": "Agentic AI", "description": "Go deeper into multi-agent systems that reason, collaborate, and act with real autonomy." },
+    { "number": "14", "title": "Deployment", "description": "Take AI applications from local prototype to a live, production deployment." },
+    { "number": "15", "title": "LLM Creation", "description": "Get under the hood of training and fine-tuning a language model from the ground up." },
+    { "number": "16", "title": "Cloud AI", "description": "Run and scale AI workloads on the cloud platforms powering modern AI products." }
+]

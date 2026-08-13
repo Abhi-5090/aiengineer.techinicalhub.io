@@ -1,0 +1,47 @@
+[
+    {
+        "title": "NT Square",
+        "img": "/Assets/NT Square.png",
+        "excerpt": "A dedicated innovation hub bringing every AIRE initiative together under one roof."
+    },
+    {
+        "title": "Awareness - Claude and Claude Code Workshops",
+        "img": "/Assets/Skill Awareness on Claude.png",
+        "excerpt": "Hands-on sessions building real fluency in Claude and Claude Code from day one."
+    },
+    {
+        "title": "AI-Based FDPs",
+        "img": "/Assets/AI Based FDPs.png",
+        "excerpt": "Faculty Development Programs that upskill educators on AI tools and modern workflows."
+    },
+    {
+        "title": "Internal Hackathon",
+        "img": "/Assets/Hack-a-thon.png",
+        "excerpt": "A fast-paced hackathon where our best minds compete to solve real-world AI problems."
+    },
+    {
+        "title": "Claude Center of Excellence",
+        "img": "/Assets/Claude Center OF Excellence.png",
+        "excerpt": "A dedicated lab built for deep, applied Claude experimentation and research."
+    },
+    {
+        "title": "Student Project Streets",
+        "img": "/Assets/Project Streets.jpg",
+        "excerpt": "An open showcase where students display the AI projects they've built."
+    },
+    {
+        "title": "Claude Certified Architects",
+        "img": "/Assets/Claude Certified Experts.png",
+        "excerpt": "Trainers certified as Claude Architects, bringing verified expertise to every classroom."
+    },
+    {
+        "title": "Project Space",
+        "img": "/Assets/Project Space.jpg",
+        "excerpt": "A dedicated coding hall where trainees build, debug, and ship real projects together."
+    },
+    {
+        "title": "Claude Associate Certification",
+        "img": "/Assets/Claude Associate Certification.png",
+        "excerpt": "Trainees earn an official Claude Associate certification on completing the program."
+    }
+]

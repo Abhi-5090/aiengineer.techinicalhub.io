@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "The Visionaries Behind the Brands",
+        "description": "At Web design agency, our mission is simple: to turn your ideas into impactful realities. We are dedicated to providing innovative, creative solutions that drive growth, elevate brands, and make a lasting impact.",
+        "image": "/images/portfolio/pic4.png",
+        "avatars": [
+            "/images/avatar/pic1.png",
+            "/images/avatar/pic2.png",
+            "/images/avatar/pic3.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Our Mission, Your Success",
+        "description": "At Web design agency, our mission is simple: to turn your ideas into impactful realities. We are dedicated to providing innovative, creative solutions that drive growth, elevate brands, and make a lasting impact.",
+        "image": "/images/portfolio/pic5.png",
+        "avatars": [
+            "/images/avatar/pic1.png",
+            "/images/avatar/pic2.png",
+            "/images/avatar/pic3.png"
+        ]
+    }
+]

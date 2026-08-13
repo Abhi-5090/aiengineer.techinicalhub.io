@@ -1,0 +1,13 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.style-1.swiper-pagination .swiper-pagination-bullet {
+    @apply bg-[#D9D9D9] opacity-100 rounded-md duration-500 !m-[0_var(--swiper-pagination-bullet-horizontal-gap,2.5px)];
+}
+.style-1.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply w-30 bg-primary;
+}
+.blog-swiper .swiper-slide:nth-child(even) .blog-card{
+    @apply sm:pt-70;
+} 

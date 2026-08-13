@@ -1,0 +1,44 @@
+[
+    {
+        "image": "/images/blog/pic3.png",
+        "title": "Transform Your Ideas",
+        "publishedAt": "15 May 2026",
+        "author": "Liam Anderson",
+        "slug": "transform-your-ideas"
+    },
+    {
+        "image": "/images/blog/pic4.png",
+        "title": "Transform Your Ideas",
+        "date": "20 June 2026",
+        "author": "Ethan Bennett",
+        "slug": "transform-your-ideas"
+    },
+    {
+        "image": "/images/blog/pic5.png",
+        "title": "How to Create Stunning",
+        "date": "5 Jan 2026",
+        "author": "Mason Hayes",
+        "slug": "how-to-create-stunning"
+    },
+    {
+        "image": "/images/blog/pic3.png",
+        "title": "Transform Your Ideas",
+        "date": "18 Feb 2026",
+        "author": "Henry Walker",
+        "slug": "transform-your-ideas"
+    },
+    {
+        "image": "/images/blog/pic4.png",
+        "title": "How to Create Stunning",
+        "date": "19 May 2026",
+        "author": "Nathan Brooks",
+        "slug": "how-to-create-stunning"
+    },
+    {
+        "image": "/images/blog/pic5.png",
+        "title": "Transform Your Ideas",
+        "date": "25 May 2026",
+        "author": "Liam Anderson",
+        "slug": "transform-your-ideas"
+    }
+]

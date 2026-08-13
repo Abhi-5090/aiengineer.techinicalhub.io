@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Torii",
+        "img": "/images/projects/torii.png",
+        "slug": "torii",
+        "link": "https://toriiminds.com/",
+        "category": "Learning Ecosystem",
+        "excerpt": "The flagship learning ecosystem — 100+ industry-aligned courses, expert instructors, and globally recognized certifications.",
+        "description": "Torii is the umbrella learning platform tying every program together — course catalogs, coding practice, analytics, career pathing, and aptitude training all live under one roof, built to help learners step in and stand out.",
+        "features": [
+            "100+ industry-aligned courses",
+            "Owl Code coding practice & contests",
+            "Corvids aptitude, verbal & reasoning games for placement prep",
+            "Crowlytics analytics and J-Path career guidance"
+        ]
+    },
+    {
+        "title": "Owl Code",
+        "img": "/images/projects/owl-code.png",
+        "slug": "owl-code",
+        "link": "https://owlcoder.technicalhub.io/",
+        "category": "Coding Practice Platform",
+        "excerpt": "A coding practice and contest platform where trainers assign courses and contests, and learners sharpen real coding skills.",
+        "description": "Owl Code is the hands-on coding arm of the platform — trainers assign structured courses and live contests, and learners practice, compete, and get measured against a real bar, not just video lessons.",
+        "features": [
+            "Assignable courses & coding contests",
+            "Live coding practice environment",
+            "Trainer-driven curriculum",
+            "Per-learner progress tracking"
+        ]
+    },
+    {
+        "title": "TAG",
+        "img": "/images/projects/tag.png",
+        "slug": "tag",
+        "link": "https://tag.ncet.co.in/",
+        "category": "Digital Marketing Platform",
+        "excerpt": "A one-stop digital marketing command center that streamlines content, approvals, and analytics across an entire institution.",
+        "description": "TAG is built for institutions running multiple colleges under one brand — a single dashboard for content templates, brand assets, approvals, post planning, and live analytics across LinkedIn, Instagram, YouTube, and Facebook, with AI-assisted insights baked in.",
+        "features": [
+            "Multi-college content & brand management",
+            "Approval workflows & post planner",
+            "Cross-platform social analytics",
+            "Tago AI insights on live performance"
+        ]
+    },
+    {
+        "title": "AI Ready Engineer",
+        "img": "/images/projects/ai-ready-engineer.png",
+        "slug": "ai-ready-engineer",
+        "link": "https://aiengineer.toriiminds.com/",
+        "category": "Learning Management Platform",
+        "excerpt": "The learning platform built specifically for the AI Engineer program — modules, assessments, and attendance, all tracked in one place.",
+        "description": "AI Ready Engineer is a purpose-built learning management platform for the AI Engineer program. It tracks every module, assessment, and attendance record for every student and trainer, giving administrators a live, institution-wide view of progress and compliance.",
+        "features": [
+            "Module & curriculum tracking",
+            "Assessments and certification records",
+            "Attendance compliance dashboards",
+            "Administrator-wide analytics"
+        ]
+    },
+    {
+        "title": "Prompt Kaizen",
+        "img": "/images/projects/prompt-kaizen.png",
+        "slug": "prompt-kaizen",
+        "link": "https://toriiminds.com/pk/",
+        "category": "Prompt Engineering Trainer",
+        "excerpt": "A prompt engineering trainer — analyze, score, and sharpen your prompting skills with daily challenges and contests.",
+        "description": "Prompt Kaizen is a compatibility analyzer and training ground for prompt engineering. It scores every prompt you write, tracks your progress over time, and keeps you sharp with a fresh daily challenge and category-based practice.",
+        "features": [
+            "AI-scored prompt analysis",
+            "Daily challenges & contests",
+            "Category-wise progress tracking",
+            "Score history & streaks"
+        ]
+    },
+    {
+        "title": "Myna",
+        "img": "/images/projects/myna.png",
+        "slug": "myna",
+        "link": "https://myna.toriiminds.com/",
+        "category": "Communication Skills App",
+        "excerpt": "A daily communication-skills coach built around LSRW — Listening, Speaking, Reading, and Writing.",
+        "description": "Myna builds fluency the way habits are actually built — daily. It coaches learners across all four LSRW skills — Listening, Speaking, Reading, and Writing — with AI-assisted feedback and a streak-driven daily sprint that keeps practice consistent.",
+        "features": [
+            "All 4 LSRW skills in one app",
+            "AI-assisted feedback",
+            "Daily fluency streaks & goals",
+            "Weekly progress timeline"
+        ]
+    }
+]

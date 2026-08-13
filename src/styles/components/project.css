@@ -1,0 +1,15 @@
+.dlab-img-overlay1:before {
+	@apply absolute top-0 left-0 z-1 size-full rounded-2lg bg-black opacity-0;
+    --tw-duration: 0.3s;
+    transition-duration: 0.3s;
+    --tw-content: '';
+    content: var(--tw-content);
+}
+.dlab-img-overlay1:hover:before {
+    @apply opacity-20;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+	@apply flex justify-center items-center;
+}

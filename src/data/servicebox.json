@@ -1,0 +1,43 @@
+[
+    {
+        "title": "AI Ready Engineer Benefits",
+        "tag": "AI Ready Engineer",
+        "slug": "ai-ready-engineer-benefits",
+        "features": [
+            "Comprehensive 200-Hour Learning Journey",
+            "Training by AI-Certified Experts",
+            "Internship Completion Letter",
+            "Industry-Ready AI Engineers",
+            "Learning Platform Access",
+            "AI Projects"
+        ],
+        "excerpt": "Everything you get from the AI Ready Engineer program, from structured training to real AI projects."
+    },
+    {
+        "title": "Student Benefits",
+        "tag": "Student",
+        "slug": "student-benefits",
+        "features": [
+            "Comprehensive 200-Hour Learning Journey",
+            "Not a Fast-Track Program",
+            "Slow, Steady & Practical Learning",
+            "Certifications from Authorized AI Partners",
+            "Training by AI-Certified Experts",
+            "Internship Completion Letter"
+        ],
+        "excerpt": "A slow, steady, and practical learning path built for real skill, not a rushed certificate."
+    },
+    {
+        "title": "College Benefits",
+        "tag": "College",
+        "slug": "college-benefits",
+        "features": [
+            "Official Claude & OpenAI Centre of Excellence",
+            "Industry-Ready AI Engineers",
+            "Improved AI Placement Opportunities",
+            "Enhanced College Branding",
+            "AI Ecosystem on Campus"
+        ],
+        "excerpt": "Bring an official Claude & OpenAI Centre of Excellence and a full AI ecosystem to your campus."
+    }
+]

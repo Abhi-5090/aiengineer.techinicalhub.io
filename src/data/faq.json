@@ -1,0 +1,127 @@
+[
+    {
+        "question": "Am I a good candidate for plastic surgery?",
+        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "question1": "What services do you offer?",
+        "answer1": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate.",
+        "name": "general",
+        "general": [
+            {
+                "question": "What services do you offer?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "Do you provide custom website design or use templates?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What platforms do you work with?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "How do you price your services?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            }
+        ]
+    },
+    {
+        "question": "How do I prepare for surgery?",
+        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "question1": "What industries do you specialize in?",
+        "answer1": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate.",
+        "process": [
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What platforms do you work with?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "How do you price your services?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between cosmetic and surgery?",
+        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "question1": "Do you provide custom website design or use templates?",
+        "answer1": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate.",
+        "technical": [
+            {
+                "question": "What services do you offer?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "Do you provide custom website design or use templates?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between cosmetic and surgery?",
+        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "question1": "What platforms do you work with?",
+        "answer1": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate.",
+        "marketing": [
+            {
+                "question": "What services do you offer?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "Do you provide custom website design or use templates?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What platforms do you work with?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "How do you price your services?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between cosmetic and surgery?",
+        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "question1": "How do you price your services?",
+        "answer1": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate.",
+        "support": [
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What platforms do you work with?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "What industries do you specialize in?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            },
+            {
+                "question": "How do you price your services?",
+                "answer": "Web agencies often work across various industries but might have expertise in fields like retail, healthcare, technology, or real estate."
+            }
+        ]
+    }
+]

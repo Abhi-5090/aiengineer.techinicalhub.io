@@ -1,0 +1,26 @@
+.pricing-wrapper {
+    @apply after:duration-300 after:content-[''] after:absolute after:top-0 after:right-0 after:size-full after:bg-[url('../../public/images/background/bg12.png'),linear-gradient(180deg,_#6EFF6E_1.92%,_#BAFFAE_53.04%,_#8CFA79_100%)] after:bg-right after:bg-no-repeat after:-z-1 after:opacity-0 after:translate-y-15;
+}
+.pricing-wrapper.active {
+    @apply after:opacity-100 after:-translate-y-0;
+}
+.pricing-wrapper.active .badge {
+    @apply inline-block;
+}
+.pricing-wrapper.active .title,
+.pricing-wrapper.active .title span{
+    @apply text-heading;
+}
+.pricing-wrapper.active p,
+.pricing-wrapper.active h4{
+    @apply text-heading;
+}
+.pricing-wrapper.active .list-items li{
+    @apply text-heading;
+}
+.pricing-wrapper.active .list-items li::before{
+    @apply bg-black/10 text-heading bg-none;
+}
+.pricing-wrapper.active .btn{
+    @apply bg-darkbtn dark:text-bodytext text-white bg-none;
+}

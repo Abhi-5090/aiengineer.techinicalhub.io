@@ -1,0 +1,10 @@
+.our-skills-item .progressbar {
+    @apply w-[var(--progress-bar-count)] leading-2 visible !h-full;
+    --progress-bar-count: 100%;
+}
+.site-bg-primary {
+    @apply dark:bg-white bg-black;
+}
+.our-skills-item .progress {
+    @apply dark:bg-white/15 bg-black/15 visible h-6 relative;
+}
