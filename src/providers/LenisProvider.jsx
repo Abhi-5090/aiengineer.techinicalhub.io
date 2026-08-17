@@ -19,39 +19,52 @@ gsap.registerPlugin(ScrollTrigger);
 // images, resize, orientation change) re-syncs every trigger whenever the
 // page's layout actually changes, for as long as the page is open.
 function ScrollTriggerRefresher() {
+    const lenis = useLenis();
+
     useEffect(() => {
-        const refresh = () => {
+        // ScrollTrigger.refresh() re-measures every trigger on the page —
+        // real work (layout reads across dozens of elements), not free.
+        // Running it while the user is actively flinging the page is
+        // exactly the kind of main-thread hitch that reads as the scroll
+        // "getting stuck" for a frame or two, especially on a real phone
+        // rather than this dev machine. So instead of a flat debounce,
+        // this waits for scrolling to actually be idle before it runs —
+        // if Lenis is still moving when the timer fires, it just pushes
+        // the check out further instead of refreshing mid-scroll.
+        const tryRefresh = () => {
+            if (lenis?.isScrolling) {
+                pendingTimer = setTimeout(tryRefresh, 150);
+                return;
+            }
             ScrollTrigger.sort();
             ScrollTrigger.refresh();
         };
 
+        let pendingTimer;
+        const scheduleRefresh = () => {
+            clearTimeout(pendingTimer);
+            pendingTimer = setTimeout(tryRefresh, 150);
+        };
+
         let lastHeight = document.documentElement.scrollHeight;
-        let debounceTimer;
         const ro = new ResizeObserver(() => {
             const height = document.documentElement.scrollHeight;
             if (Math.abs(height - lastHeight) < 1) return;
             lastHeight = height;
-            clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(refresh, 150);
+            scheduleRefresh();
         });
         ro.observe(document.body);
 
-        let resizeTimer;
-        const onResize = () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(refresh, 200);
-        };
-        window.addEventListener("resize", onResize);
-        window.addEventListener("orientationchange", onResize);
+        window.addEventListener("resize", scheduleRefresh);
+        window.addEventListener("orientationchange", scheduleRefresh);
 
         return () => {
             ro.disconnect();
-            clearTimeout(debounceTimer);
-            clearTimeout(resizeTimer);
-            window.removeEventListener("resize", onResize);
-            window.removeEventListener("orientationchange", onResize);
+            clearTimeout(pendingTimer);
+            window.removeEventListener("resize", scheduleRefresh);
+            window.removeEventListener("orientationchange", scheduleRefresh);
         };
-    }, []);
+    }, [lenis]);
 
     return null;
 }

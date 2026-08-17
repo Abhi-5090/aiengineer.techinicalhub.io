@@ -7,6 +7,7 @@ export default function HeroBanner() {
     const sectionRef = useRef(null);
     const techHubRef = useRef(null);
     const logoRef = useRef(null);
+    const logoMobileRef = useRef(null);
     const aiPartnersRef = useRef(null);
     const assocPartnerRef = useRef(null);
     const aiPartnersMobileRef = useRef(null);
@@ -22,7 +23,7 @@ export default function HeroBanner() {
                     const { isMobile } = context.conditions;
                     const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
                     tl.fromTo(techHubRef.current, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 1.8 }, 0)
-                        .fromTo(logoRef.current, { opacity: 0, scale: 0.7, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 2.2 }, 0.4);
+                        .fromTo(isMobile ? logoMobileRef.current : logoRef.current, { opacity: 0, scale: 0.7, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 2.2 }, 0.4);
 
                     if (isMobile) {
                         // Separate stacked-and-centered markup for mobile
@@ -49,11 +50,11 @@ export default function HeroBanner() {
                     <Image loading="eager" src="/Assets/Technical Hub white.png" alt="Technical Hub" className="h-32 sm:h-44 w-auto" />
                 </div>
 
-                <div ref={logoRef} className="absolute inset-x-0 top-[25%] z-2 flex justify-center px-2">
-                    <Image loading="eager" src="/Assets/AI ready engineer logo white.png" alt="AI Ready Engineer" className="w-full max-w-[83%] sm:max-w-765 xl:max-w-900 h-auto drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)]" />
+                {/* Desktop: logo centered up top, partners pinned to the
+                left/right edges further down — unchanged */}
+                <div ref={logoRef} className="hidden sm:flex absolute inset-x-0 top-[25%] z-2 justify-center px-2">
+                    <Image loading="eager" src="/Assets/AI ready engineer logo white.png" alt="AI Ready Engineer" className="w-full sm:max-w-765 xl:max-w-900 h-auto drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)]" />
                 </div>
-
-                {/* Desktop: side by side at the left/right edges — unchanged */}
                 <div ref={aiPartnersRef} className="hidden sm:flex absolute sm:left-60 sm:top-[72%] z-10 flex-col items-center gap-8">
                     <h4 className="text-lg font-semibold text-white text-center">AI Partners</h4>
                     <div className="flex items-center gap-16">
@@ -66,11 +67,15 @@ export default function HeroBanner() {
                     <Image loading="lazy" src="/Assets/torii-white.png" alt="Torii" className="h-48 w-auto" />
                 </div>
 
-                {/* Mobile: stacked and centered, bottom-anchored so the two
-                blocks stack with a fixed gap instead of guessed top-%
-                positions that overlapped once "Association Partner"'s wider
-                logo pushed into "AI Partners". */}
-                <div className="sm:hidden absolute inset-x-0 bottom-30 z-10 flex flex-col items-center gap-24 px-20">
+                {/* Mobile: logo, AI Partners, and Association Partner as one
+                tight cluster, vertically centered as a group — not the
+                logo pinned to a top-% and the partners pinned to the
+                bottom, which left a huge gap between them on any
+                reasonably tall phone screen. */}
+                <div className="sm:hidden absolute inset-0 z-10 flex flex-col items-center justify-center gap-30 px-20">
+                    <div ref={logoMobileRef} className="w-full flex justify-center">
+                        <Image loading="eager" src="/Assets/AI ready engineer logo white.png" alt="AI Ready Engineer" className="w-full max-w-[83%] h-auto drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)]" />
+                    </div>
                     <div ref={aiPartnersMobileRef} className="flex flex-col items-center gap-8">
                         <h4 className="text-sm font-semibold text-white text-center">AI Partners</h4>
                         <div className="flex items-center gap-12">
