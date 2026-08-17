@@ -51,8 +51,8 @@ export default function AppointmentForm() {
                                 <span className="block text-primary text-4xl font-bold">by</span>
                             </div>
                             <div ref={partnersRef} className="flex items-center sm:gap-30 gap-18">
-                                <Image loading="lazy" src="/Assets/claude partner.png" alt="Claude Partner Network" className="h-112 w-auto rounded-lg shadow-lg"/>
-                                <Image loading="lazy" src="/Assets/open ai partner.jpeg" alt="OpenAI Select Partner" className="h-112 w-auto rounded-lg shadow-lg"/>
+                                <Image loading="lazy" src="/Assets/claude partner.png" alt="Claude Partner Network" className="h-65 sm:h-112 w-auto rounded-lg shadow-lg"/>
+                                <Image loading="lazy" src="/Assets/open ai partner.jpeg" alt="OpenAI Select Partner" className="h-65 sm:h-112 w-auto rounded-lg shadow-lg"/>
                             </div>
                         </div>
                     </div>
