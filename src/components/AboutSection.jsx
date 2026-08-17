@@ -48,7 +48,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-12 md:gap-60 gap-20 mt-40">
                     <div className="3xl:col-span-5 lg:col-span-4 col-span-12 lg:pt-100">
                         <div className="my-sticky !top-150 3xl:w-425 w-full sm:h-557 h-450 after:content-[''] after:absolute after:top-0 after:left-0 after:size-full after:bg-primary after:opacity-80 after:rounded-2lg after:mix-blend-soft-light">
-                                <video className="size-full object-cover rounded-2lg" autoPlay loop muted playsInline preload="auto">
+                                <video className="size-full object-cover rounded-2lg" autoPlay loop muted playsInline webkit-playsinline="true" preload="auto">
                                 <source src={`${import.meta.env.BASE_URL}video/AIRE Video.mp4`} type="video/mp4"/>
                             </video>
                         </div>

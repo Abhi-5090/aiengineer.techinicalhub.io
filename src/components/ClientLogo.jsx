@@ -22,23 +22,29 @@ export default function ClientLogo() {
     return (<section className="noice-overlay bg-black z-2">
             <div className="sm:py-50 py-30">
                 <div className="container-fluid">
-                    <div className="flex items-center sm:gap-50 gap-25 flex-wrap">
+                    {/* flex-col on mobile, centered — flex-wrap alone never
+                    actually triggered here: the swiper's min-w-0 lets it
+                    shrink arbitrarily instead of wrapping, so the heading's
+                    shrink-0 width just squeezed it down to a sliver (each
+                    "2-up" slide was rendering at ~66px wide). Explicit
+                    row/column per breakpoint fixes that at the source. */}
+                    <div className="flex flex-col items-center text-center gap-20 sm:flex-row sm:items-center sm:text-left sm:gap-50">
                         <h4 className="text-4xl/44 text-white font-bold shrink-0">Partnered<br/><span className="text-primary">Clients</span></h4>
-                        <div className="flex-1 min-w-0">
-                            <Swiper className="brand-swiper [&_.swiper-wrapper]:items-center" modules={[Autoplay]} speed={1500} slidesPerView={4} spaceBetween={30} loop={true} autoplay={{
+                        <div className="w-full sm:flex-1 sm:min-w-0">
+                            <Swiper className="brand-swiper [&_.swiper-wrapper]:items-center" modules={[Autoplay]} speed={1500} slidesPerView={2} spaceBetween={20} loop={true} autoplay={{
             delay: 3000,
         }} breakpoints={{
-            300: {
-                slidesPerView: 1,
-            },
             360: {
                 slidesPerView: 2,
+                spaceBetween: 30,
             },
             767: {
                 slidesPerView: 3,
+                spaceBetween: 30,
             },
             991: {
                 slidesPerView: 4,
+                spaceBetween: 30,
             }
         }}>
                                 {slides.map((logo, index) => (<SwiperSlide key={index}>

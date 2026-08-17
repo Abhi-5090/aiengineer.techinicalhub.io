@@ -9,14 +9,36 @@ export default function HeroBanner() {
     const logoRef = useRef(null);
     const aiPartnersRef = useRef(null);
     const assocPartnerRef = useRef(null);
+    const aiPartnersMobileRef = useRef(null);
+    const assocPartnerMobileRef = useRef(null);
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
-            const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
-            tl.fromTo(techHubRef.current, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 1.8 }, 0)
-                .fromTo(logoRef.current, { opacity: 0, scale: 0.7, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 2.2 }, 0.4)
-                .fromTo(aiPartnersRef.current, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 1.8 }, 1.8)
-                .fromTo(assocPartnerRef.current, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 1.8 }, 1.8);
+            const mm = gsap.matchMedia();
+
+            mm.add(
+                { isMobile: "(max-width: 639px)", isDesktop: "(min-width: 640px)" },
+                (context) => {
+                    const { isMobile } = context.conditions;
+                    const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
+                    tl.fromTo(techHubRef.current, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 1.8 }, 0)
+                        .fromTo(logoRef.current, { opacity: 0, scale: 0.7, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 2.2 }, 0.4);
+
+                    if (isMobile) {
+                        // Separate stacked-and-centered markup for mobile
+                        // (see the mobile-only block in the JSX below) — so
+                        // these come in one after the other, both sliding in
+                        // from the right toward center, rather than the
+                        // desktop's simultaneous left/right pop from
+                        // opposite edges.
+                        tl.fromTo(aiPartnersMobileRef.current, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 1.4 }, 1.8)
+                            .fromTo(assocPartnerMobileRef.current, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 1.4 }, 2.5);
+                    } else {
+                        tl.fromTo(aiPartnersRef.current, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 1.8 }, 1.8)
+                            .fromTo(assocPartnerRef.current, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 1.8 }, 1.8);
+                    }
+                }
+            );
         }, sectionRef);
         return () => ctx.revert();
     }, []);
@@ -31,17 +53,35 @@ export default function HeroBanner() {
                     <Image loading="eager" src="/Assets/AI ready engineer logo white.png" alt="AI Ready Engineer" className="w-full max-w-[83%] sm:max-w-765 xl:max-w-900 h-auto drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)]" />
                 </div>
 
-                <div ref={aiPartnersRef} className="absolute left-20 sm:left-60 top-[77%] sm:top-[72%] z-10 flex flex-col items-center gap-8">
-                    <h4 className="text-sm sm:text-lg font-semibold text-white text-center">AI Partners</h4>
-                    <div className="flex items-center gap-12 sm:gap-16">
-                        <Image loading="lazy" src="/Assets/claude-white.png" alt="Claude" className="h-34 sm:h-40 w-auto" />
-                        <Image loading="lazy" src="/Assets/openai-white.png" alt="OpenAI" className="h-34 sm:h-40 w-auto" />
+                {/* Desktop: side by side at the left/right edges — unchanged */}
+                <div ref={aiPartnersRef} className="hidden sm:flex absolute sm:left-60 sm:top-[72%] z-10 flex-col items-center gap-8">
+                    <h4 className="text-lg font-semibold text-white text-center">AI Partners</h4>
+                    <div className="flex items-center gap-16">
+                        <Image loading="lazy" src="/Assets/claude-white.png" alt="Claude" className="h-40 w-auto" />
+                        <Image loading="lazy" src="/Assets/openai-white.png" alt="OpenAI" className="h-40 w-auto" />
                     </div>
                 </div>
+                <div ref={assocPartnerRef} className="hidden sm:flex absolute sm:right-60 sm:top-[72%] z-10 flex-col items-center gap-10">
+                    <h4 className="text-xl font-semibold text-white text-center">Association Partner</h4>
+                    <Image loading="lazy" src="/Assets/torii-white.png" alt="Torii" className="h-48 w-auto" />
+                </div>
 
-                <div ref={assocPartnerRef} className="absolute right-20 sm:right-60 top-[77%] sm:top-[72%] z-10 flex flex-col items-center gap-10">
-                    <h4 className="text-base sm:text-xl font-semibold text-white text-center">Association Partner</h4>
-                    <Image loading="lazy" src="/Assets/torii-white.png" alt="Torii" className="h-40 sm:h-48 w-auto" />
+                {/* Mobile: stacked and centered, bottom-anchored so the two
+                blocks stack with a fixed gap instead of guessed top-%
+                positions that overlapped once "Association Partner"'s wider
+                logo pushed into "AI Partners". */}
+                <div className="sm:hidden absolute inset-x-0 bottom-30 z-10 flex flex-col items-center gap-24 px-20">
+                    <div ref={aiPartnersMobileRef} className="flex flex-col items-center gap-8">
+                        <h4 className="text-sm font-semibold text-white text-center">AI Partners</h4>
+                        <div className="flex items-center gap-12">
+                            <Image loading="lazy" src="/Assets/claude-white.png" alt="Claude" className="h-34 w-auto" />
+                            <Image loading="lazy" src="/Assets/openai-white.png" alt="OpenAI" className="h-34 w-auto" />
+                        </div>
+                    </div>
+                    <div ref={assocPartnerMobileRef} className="flex flex-col items-center gap-10">
+                        <h4 className="text-base font-semibold text-white text-center">Association Partner</h4>
+                        <Image loading="lazy" src="/Assets/torii-white.png" alt="Torii" className="h-40 w-auto" />
+                    </div>
                 </div>
 
                 <Image loading="lazy" src={IMAGES.bg1} alt="bg1" width={114} height={89} className="absolute z-1 animate-move w-114 h-89 3xl:bottom-[40%] bottom-[30%] right-[10%] max-xl:hidden"/>
