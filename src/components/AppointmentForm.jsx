@@ -18,9 +18,9 @@ export default function AppointmentForm() {
             gsap.set([logoRef.current, creditRef.current, partnersRef.current], { scale: 0.75, opacity: 0 });
 
             const tl = gsap.timeline({ paused: true });
-            tl.to(logoRef.current, { scale: 1, opacity: 1, duration: 1.5, ease: "power3.inOut" }, 0)
-                .to(creditRef.current, { scale: 1, opacity: 1, duration: 1.5, ease: "power3.inOut" }, 1)
-                .to(partnersRef.current, { scale: 1, opacity: 1, duration: 1.5, ease: "power3.inOut" }, 2);
+            tl.to(logoRef.current, { scale: 1, opacity: 1, duration: 0.75, ease: "power3.inOut" }, 0)
+                .to(creditRef.current, { scale: 1, opacity: 1, duration: 0.75, ease: "power3.inOut" }, 0.5)
+                .to(partnersRef.current, { scale: 1, opacity: 1, duration: 0.75, ease: "power3.inOut" }, 1);
 
             // Built via ScrollTrigger.create() + animation:, not the timeline's own
             // scrollTrigger vars — a trigger created that second way never lands in
