@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages — https://github.com/rafgraph/spa-github-pages
+      // Decodes the path 404.html re-encoded into the query string, and
+      // restores the real URL via history.replaceState before React Router
+      // mounts below — so a direct visit to a deep route still lands on
+      // the right page instead of index.html.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <link rel="icon" href="/aiengineer.techinicalhub.io/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/aiengineer.techinicalhub.io/favicon.png" />
+    <link rel="apple-touch-icon" href="/aiengineer.techinicalhub.io/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AI Ready Engineer</title>
+    <meta
+      name="description"
+      content="AI Ready Engineer — Technical Hub's AI training program in partnership with Claude and OpenAI, built on the Torii learning ecosystem."
+    />
+    <meta property="og:title" content="AI Ready Engineer LP" />
+    <meta
+      property="og:description"
+      content="Technical Hub's AI Ready Engineer program — 200+ hours of training, 16 modules, and 50+ AI tools."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/aiengineer.techinicalhub.io/icons/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="/aiengineer.techinicalhub.io/icons/line-awesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="/aiengineer.techinicalhub.io/icons/themify-icons/css/themify-icons.css" />
+    <script type="module" crossorigin src="/aiengineer.techinicalhub.io/assets/index-BNk9Jjtu.js"></script>
+    <link rel="stylesheet" crossorigin href="/aiengineer.techinicalhub.io/assets/index-D9JC-7YG.css">
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+  </body>
+</html>
