@@ -23,6 +23,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Opts into the /aiengineer.techinicalhub.io/ base path — only
+          # this workflow's build needs it (see vite.config.js). A plain
+          # `npm run build` anywhere else (e.g. for the AWS deployment)
+          # serves from the domain root instead.
+          GH_PAGES_BASE: /aiengineer.techinicalhub.io/
       # Publishes dist/ to a dedicated gh-pages branch, which the repo's
       # Pages source should point at (Settings -> Pages -> Deploy from a
       # branch -> gh-pages -> /(root)). Simpler and less error-prone than

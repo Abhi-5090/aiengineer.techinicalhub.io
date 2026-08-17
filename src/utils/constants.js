@@ -52,7 +52,6 @@ const team2 = "/images/team/pic2.png";
 const team3 = "/images/team/pic3.png";
 const team4 = "/images/team/pic4.png";
 const portfolio4 = "/images/portfolio/pic4.png";
-// import portfolio5 from '../public/images/portfolio/pic5.png';
 const avatar1 = "/images/avatar/pic1.png";
 const avatar2 = "/images/avatar/pic2.png";
 const avatar3 = "/images/avatar/pic3.png";
